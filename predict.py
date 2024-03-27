@@ -15,7 +15,7 @@ def resimOku(path):
 okunanResim = resimOku("Images/resim_7.png")
 
 yapayzeka = YapaySinirAgi()
-yapayzeka.yukle("ytu_egitilmis_model_50")
+yapayzeka.yukle("ytu_egitilmis_model_50.h5")
 
 tahminSonuc = yapayzeka.tahminEt(okunanResim)
 tahminSonuc = np.argmax(tahminSonuc)
