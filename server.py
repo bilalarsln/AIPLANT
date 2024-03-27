@@ -12,7 +12,7 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 cors = CORS(app)
 
 yapayzeka = YapaySinirAgi()
-yapayzeka.yukle("ytu_egitilmis_model_50")
+yapayzeka.yukle("ytu_egitilmis_model_50.h5")
 
 def resimOptimizasyon(resim):
     

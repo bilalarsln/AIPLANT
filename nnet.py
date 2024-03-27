@@ -36,7 +36,7 @@ class YapaySinirAgi:
         self.model.add(Dense(10,activation="softmax"))
         self.model.compile(loss='categorical_crossentropy', optimizer="adam", metrics=['acc'])
     
-    def egit(self, egitimVerisi, devir = 50):
+    def egit(self, egitimVerisi, devir = 5):
         self.model.fit(egitimVerisi.X, egitimVerisi.y, epochs=devir, batch_size=64)
         _,acc = self.model.evaluate(egitimVerisi.X,egitimVerisi.y)
         print("Eğitim tamamlandı, Doğruluk:", str(acc))

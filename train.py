@@ -36,7 +36,7 @@ egitimVerisi.y = y
 
 
 yapayzeka = YapaySinirAgi()
-yapayzeka.egit(egitimVerisi,50)
+yapayzeka.egit(egitimVerisi,5)
 yapayzeka.kaydet("ytu_egitilmis_model_50.h5")
 
 
